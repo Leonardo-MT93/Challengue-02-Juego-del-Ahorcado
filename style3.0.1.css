@@ -1,9 +1,12 @@
+html{
+  scroll-behavior: smooth;
+}
+
 article {
   background: linear-gradient(
     to right, 
     hsl(98 100% 62%), 
-    hsl(204 100% 59%)
-  );
+    hsl(204 100% 59%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -65,9 +68,6 @@ user-select: none;
 -webkit-user-select: none;
 touch-action: manipulation;
   margin-left: 25%;
-
-
-  
 }
 
 .button-53:focus {
@@ -88,14 +88,6 @@ height: calc(100% - 1px);
 bottom: 2px;
 left: 2px;
 }
-
-@media (min-width: 768px) {
-.button-53 {
-  padding: .75rem 3rem;
-  font-size: 1.25rem;
-}
-}
-
 button.centrado {
   width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
   margin-left: 50%;
@@ -124,7 +116,7 @@ transform: translateY(0rem);
 font-family: 'Roboto', sans-serif;
 color: #333;
 font-size: 1.2rem;
-margin: 0 auto;
+margin: 3rem auto;
 padding: 1.5rem 2rem;
 border-radius: 0.2rem;
 background-color: rgb(255, 255, 255);
@@ -141,3 +133,40 @@ visibility: hidden;
 -webkit-transform: translateY(-4rem);
 transform: translateY(-4rem);
 }
+@media (min-width: 768px) {
+
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+  }
+  @media (max-width: 800px) and (orientation: landscape){
+    .titulo_principal{
+      text-align: center;
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .form__input{
+      width: 60%;
+      margin: 1.5rem auto 0rem auto;
+    }
+    .canvas_mobile{
+      width: 500px;
+      height: 300px;
+    }
+    .button-53{
+      max-width: 360px;
+    }
+    article{
+      width: 600px
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      min-inline-size: 0%;
+      width: 500px;
+    }
+  }

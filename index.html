@@ -7,31 +7,28 @@
     <title>Juego del Ahorcado - V3.0</title>
     <link rel="stylesheet" href="style3.0.1.css">
 </head>
-<body>
+<body class="app" id="iniciodeverdad">
     <article>
-        <h1>Juego del Ahorcado</h1>
+        <h1 class="titulo_principal">Juego del Ahorcado</h1>
         <br>
         <p>CHALLENGUE 02 - ALURA LATAM/ORACLE ONE</p>
       </article>
       <br>
-      <button type="button" id="inicio" onclick="crearTablero()" class="button-53" role="button">INICIAR JUEGO</button>
-      <br>
-      <br>
-      <br>
+      <a href="#e">
+        <button type="button" id="inicio" onclick="crearTablero()" class="button-53" role="button">INICIAR JUEGO</button>
+      </a>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <div class="form__group">
             <input type="text" class="form__input" required="" name="nuevodato" id="nuevodato" placeholder="Escriba una nueva palabra en Mayúscula" />
-            <label for="name" class="form__label">Full Name</label>
-                     
+            <label for="name" class="form__label">Full Name</label>                
         </div>
       <button type="button" id="agregar" onclick="agregarPalabra()" class="button-53" role="button">AGREGAR PALABRA</button>
+
+      <canvas id="e" width="1200" height="800" class="canvas_mobile"></canvas>
       <br>
-      <br>
-      <br>
-      <br>
-      
-      <canvas id="e" width="1200" height="800"></canvas>
-      <br>
+      <a href="#iniciodeverdad">
+        <button class="button-53">Reiniciar</button>
+      </a>
       <footer>
           <article>
               <p>

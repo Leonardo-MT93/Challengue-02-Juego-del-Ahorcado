@@ -26,7 +26,6 @@ var caracterEspecial = ['!','|','°','?','¡','¿','$','%','&','/','(',')','-','
 var nuevaPalabra;
 var iniciarjuego = 0;
 var letrasGuardadas = [];
-
 if(iniciarjuego == 0){//        -------- CON ESTA CONDICIONAL NOS ASEGURAMOS DE PRESIONAR UNA SOLA VEZ EL INICIO DEL JUEGO --------
     document.addEventListener("keyup", validarnuevaPalabra);
 }
